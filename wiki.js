@@ -9,3 +9,9 @@ mongoose.connect('mongodb://localhost/mongoDB');
 var wikiDB = mongoose.connection;
 
 var path = require('path');
+
+var multiparty = require('connect-multiparty');
+
+var async = require('async');
+var flash = require('connect-flash');
+var passport = require('passport');
