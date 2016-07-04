@@ -21,6 +21,10 @@ var LocalStrategy = require('passport-local').Strategy;
 
 var bcrypt = require('bcrypt-nodejs');
 var session = require('express-session');
-var methodOverride = require('mothod-override');
+var methodOverride = require('method-override');
 
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.listen(3000, function(){
+	console.log('Server open');
+});
