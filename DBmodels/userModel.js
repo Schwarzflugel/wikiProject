@@ -1,6 +1,9 @@
+//userSchema를 구현하기 위해 mogoose를 require
 var mongoose = require('mongoose');
+//암호화를 위해 bcrypt-nodejs를 require
 var bcrypt = require('bcrypt-nodejs');
 
+//userSchema 선언
 var userSchema = mongoose.Schema({
 	nickname: {
 		type: String,
